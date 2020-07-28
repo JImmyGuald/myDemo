@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    hikari:
+      idle-timeout: 3000000
+      max-lifetime: 6000000
+      maximum-pool-size: 16
+    url: jdbc:mysql://localhost:3306/lotus?useUnicode=true&characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
